@@ -1,7 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import FormCreator from './components/FormCreator';
+import Setting from './components/Setting';
 import StartPage from './components/StartPage';
+
 
 function App() {
   const optionInputs = ['input', 'textarea', 'checkbox'];
@@ -28,6 +30,7 @@ function App() {
   return (
    <>
    <Route exact path="/" render={() => <StartPage/>} />
+   <Route exact path="/setting" render={() => <Setting/>} />
    <Route path="/form" render={() => <FormCreator optionInputs={optionInputs} inputCounter={inputCounter}
     addInput={addInput}removeInput={removeInput} build={build} buildForm={buildForm} />} />
    </>
