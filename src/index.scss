@@ -57,10 +57,10 @@ body {
     margin-top: 10px;
     cursor: pointer;
     width: 35px;
-    &:hover{
+    &:hover {
       width: 37px;
     }
-    &:active{
+    &:active {
       width: 40px;
     }
   }
@@ -72,17 +72,17 @@ body {
   }
 }
 
-.your-component .react-colorful {
+.react-colorful {
   height: 240px;
 }
-.your-component .react-colorful__saturation {
+.react-colorful__saturation {
   border-radius: 4px 4px 0 0;
 }
-.your-component .react-colorful__hue {
+.react-colorful__hue {
   height: 40px;
   border-radius: 0 0 4px 4px;
 }
-.your-component .react-colorful__hue-pointer {
+.react-colorful__hue-pointer {
   width: 12px;
   height: inherit;
   border-radius: 0;

@@ -1,14 +1,17 @@
-import React from 'react'
-import { HexColorPicker } from "react-colorful";
+import React from 'react';
+import { HexColorPicker } from 'react-colorful';
 
 export default function Setting() {
-    const [color, setColor] = React.useState("#aabbcc");
+  const [color, setColor] = React.useState('#aabbcc');
+
+  const changeBackgroundColor = (color) => {
+    setColor(color);
+    document.body.style.backgroundColor = color;
+  };
   return (
-    <div style={{backgroundColor:color}}>
-    Setting
-    <HexColorPicker color={color} onChange={setColor} />;  
+    <div>
+      Setting
+      <HexColorPicker color={color} onChange={(color) => changeBackgroundColor(color)} />;
     </div>
-  )
+  );
 }
-
-
